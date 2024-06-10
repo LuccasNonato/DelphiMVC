@@ -13,7 +13,7 @@ type
      FPrecoVenda : Currency;
 
    public
-     class function New: ICliente;
+     class function New: IProduto;
      function SetCodigo(const Value : integer): IProduto;
      function GetCodigo: integer;
      function SetDescricao(const Value : string): IProduto;

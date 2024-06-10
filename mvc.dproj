@@ -105,6 +105,9 @@
         <DCCReference Include="model\entity\mvc.model.entity.interfaced.pas"/>
         <DCCReference Include="model\entity\implementation\mvc.model.entity.interfaced.Cliente.pas"/>
         <DCCReference Include="model\entity\implementation\mvc.model.entity.interfaced.Produto.pas"/>
+        <DCCReference Include="model\entity\implementation\mvc.model.entity.interfaced.Pedido.pas"/>
+        <DCCReference Include="model\entity\implementation\mvc.model.entity.interfaced.PedidoItem.pas"/>
+        <DCCReference Include="model\entity\implementation\mvc.model.entity.interfaced.Entity.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
