@@ -1,0 +1,133 @@
+unit mvc.model.entity.interfaced.connection.impl.Config;
+
+interface
+
+uses
+  mvc.model.connection.interfaces,
+  System.SysUtils,
+  IniFiles;
+
+type
+  TConfiguracao = class(TInterfacedObject, IConfiguracao)
+  const
+     SECTION = 'CONFIG';
+     CAMINHO = 'CAMINHO';
+     PORTA = 'PORTA';
+     SERVIDOR = 'SERVIDOR';
+     USUARIO = 'USERNAME';
+     SENHA = 'PASSWORD';
+     DRIVER = 'DRIVERNAME';
+  private
+         FArquivo: TIniFile;
+
+         constructor Create(FileName: string);
+         destructor  Destroy; override;
+      public
+        class function New(FileName: string): IConfiguracao;
+        function GetProtocol: string;
+
+        function SetServidor(const Value: string): IConfiguracao;
+        function GetServidor: string;
+
+        function SetPorta(const Value: integer): IConfiguracao;
+        function GetPorta: Integer;
+
+        function SetUsuario(const Value: string): IConfiguracao;
+        function GetUsuario: string;
+
+        function SetSenha(const Value: string): IConfiguracao;
+        function GetSenha: string;
+
+        function SetCaminho(const Value: string): IConfiguracao;
+        function GetCaminho: string;
+
+        function SetDriveName(const Value: string): IConfiguracao;
+        function GetDriverName: string;
+      end;
+
+implementation
+
+{ TConfiguracao }
+
+constructor TConfiguracao.Create(FileName: string);
+begin
+  FArquivo := TIniFile.Create(FileName);
+end;
+
+destructor TConfiguracao.Destroy;
+begin
+
+  inherited;
+end;
+
+function TConfiguracao.GetCaminho: string;
+begin
+
+end;
+
+function TConfiguracao.GetDriverName: string;
+begin
+
+end;
+
+function TConfiguracao.GetPorta: Integer;
+begin
+
+end;
+
+function TConfiguracao.GetProtocol: string;
+begin
+
+end;
+
+function TConfiguracao.GetSenha: string;
+begin
+
+end;
+
+function TConfiguracao.GetServidor: string;
+begin
+
+end;
+
+function TConfiguracao.GetUsuario: string;
+begin
+
+end;
+
+class function TConfiguracao.New(FileName: string): IConfiguracao;
+begin
+   Result := Self.Create(FileName);
+end;
+
+function TConfiguracao.SetCaminho(const Value: string): IConfiguracao;
+begin
+
+end;
+
+function TConfiguracao.SetDriveName(const Value: string): IConfiguracao;
+begin
+
+end;
+
+function TConfiguracao.SetPorta(const Value: integer): IConfiguracao;
+begin
+
+end;
+
+function TConfiguracao.SetSenha(const Value: string): IConfiguracao;
+begin
+
+end;
+
+function TConfiguracao.SetServidor(const Value: string): IConfiguracao;
+begin
+
+end;
+
+function TConfiguracao.SetUsuario(const Value: string): IConfiguracao;
+begin
+
+end;
+
+end.

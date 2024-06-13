@@ -43,7 +43,7 @@ begin
   Result := FPrecoVenda;
 end;
 
-class function TProduto.New: ICliente;
+class function TProduto.New: IProduto;
 begin
 
 end;

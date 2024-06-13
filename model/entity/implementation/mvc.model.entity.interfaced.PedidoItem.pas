@@ -70,7 +70,7 @@ begin
   Result := FValorUnitario;
 end;
 
-class function TPedidoItem.New: IPedido;
+class function TPedidoItem.New: IPedidoItem;
 begin
 
 end;
